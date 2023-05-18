@@ -1,24 +1,45 @@
 // import React from 'react';
 
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const NavigationBar = () => {
+    const { logOut, user } = useContext(AuthContext)
+    // handle logout
+    const handleLogOut = () => {
+        logOut();
+    }
     return (
         <nav className='mt-4 mx-3 md:mx-32 md:flex justify-between items-center text-center '>
-            
+
             <div>
-                <h1 className='text-3xl font-bold'>Cars Toy</h1>
+                <h1 className='text-3xl font-bold'>Sports Toys</h1>
             </div>
             <div className='font-semibold grid grid-cols-3 md:grid-cols-5'>
                 <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>Home</NavLink>
                 <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>All Toys</NavLink>
-                <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>My Toys</NavLink>
-                <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>Add A Toy</NavLink>
+                {
+                    user&&<>
+                    <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>My Toys</NavLink>
+                    <NavLink to='/addatoy' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>Add A Toy</NavLink>
+                    </>
+                }
                 <NavLink to='/blogs' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>Blogs</NavLink>
             </div>
             <div className='flex justify-center'>
-                    <button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log out</button>
-                    <Link to='/login'><button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log in</button></Link>
+                {/* <button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log out</button>
+                    <Link to='/login'><button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log in</button></Link> */}
+                {
+                    user && <button className="w-8">
+                        <img src={user?.photoURL} className='rounded-3xl' alt="" />
+                    </button>
+                }
+                {
+
+                    user ? <button onClick={handleLogOut} className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log out</button> :
+                        <Link to='/login'><button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log in</button></Link>
+                }
             </div>
             {/* <div className='flex justify-center'>
                 {
