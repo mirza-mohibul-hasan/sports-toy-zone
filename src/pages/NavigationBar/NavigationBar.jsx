@@ -18,10 +18,10 @@ const NavigationBar = () => {
             </div>
             <div className='font-semibold grid grid-cols-3 md:grid-cols-5'>
                 <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>Home</NavLink>
-                <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>All Toys</NavLink>
+                <NavLink to='/alltoys' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>All Toys</NavLink>
                 {
                     user&&<>
-                    <NavLink to='/' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>My Toys</NavLink>
+                    <NavLink to='/mytoys' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>My Toys</NavLink>
                     <NavLink to='/addatoy' className='font-bold mx-5 my-2 md:my-0 hover:text-[#2196f3]'>Add A Toy</NavLink>
                     </>
                 }

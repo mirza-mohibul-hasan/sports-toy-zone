@@ -1,6 +1,7 @@
 // import React from 'react';
 
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const SubCategory = () => {
     const [toys, setToys] = useState([]);
@@ -9,7 +10,19 @@ const SubCategory = () => {
     useEffect(()=>{
         fetch(`http://localhost:5000/toyscategory/${activeTab}`)
         .then(res => res.json())
-        .then(result=> setToys(result))
+        .then(result=> {
+            setToys(result)
+            toast.success('Data read successfull', {
+                position: "top-center",
+                autoClose: 1000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
+        })
     },[activeTab])
 
     const handleTabClick = (tabName) => {
@@ -17,6 +30,7 @@ const SubCategory = () => {
     };
     return (
         <div>
+            <ToastContainer></ToastContainer>
             <h1>Sub Category is here</h1>
             <div className="flex justify-center gap-2">
 
