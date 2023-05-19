@@ -13,7 +13,7 @@ const SubCategory = () => {
         .then(result=> {
             setToys(result)
             toast.success('Data read successfull', {
-                position: "top-center",
+                position: "top-left",
                 autoClose: 1000,
                 hideProgressBar: false,
                 closeOnClick: true,

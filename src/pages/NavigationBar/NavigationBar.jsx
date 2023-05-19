@@ -1,17 +1,15 @@
 // import React from 'react';
-
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 
 const NavigationBar = () => {
-    const { logOut, user } = useContext(AuthContext)
-    // handle logout
+    const { logOut, user} = useContext(AuthContext)
     const handleLogOut = () => {
         logOut();
     }
     return (
-        <nav className='mt-4 mx-3 md:mx-32 md:flex justify-between items-center text-center '>
+        <nav className='mt-4 mx-3 w-11/12 md:mx-auto mb-5 md:flex justify-between items-center text-center '>
 
             <div>
                 <h1 className='text-3xl font-bold'>Sports Toys</h1>
@@ -55,6 +53,7 @@ const NavigationBar = () => {
                     <Link to='/login'><button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log in</button></Link>
                 }
             </div> */}
+            
         </nav>
     );
 };
