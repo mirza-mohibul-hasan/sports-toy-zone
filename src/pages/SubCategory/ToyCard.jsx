@@ -3,7 +3,7 @@
 const ToyCard = ({ toy }) => {
     const { toyName, price, rating, toyImg } = toy || {};
     return (
-        <div className="card card-side border border-[#2195f34e] bg-[#2195f30e] shadow-xl flex-col md:flex-row">
+        <div className="card card-side border-2 border-[#2195f33a] bg-[#2195f30e] shadow-xl flex-col md:flex-row">
             <div className="p-1 rounded-xl">
                 <img className="h-64 w-full md:w-72 mx-auto rounded-xl" src={toyImg} alt="Toy Iamge" />
             </div>
@@ -18,5 +18,4 @@ const ToyCard = ({ toy }) => {
         </div>
     );
 };
-
 export default ToyCard;
