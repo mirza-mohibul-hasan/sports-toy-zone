@@ -54,7 +54,7 @@ const AddAToy = () => {
                         <input type="text" {...register("price")} placeholder="Price" className='bg-gray-100 px-5 py-2 rounded' />
                         <input type="text" {...register("rating")} placeholder="Ratings" className='bg-gray-100 px-5 py-2 rounded' />
                         <input type="text" {...register("quantity")} placeholder="Available Quantity" className='bg-gray-100 px-5 py-2 rounded' />
-                        <input type="text" {...register("description")} placeholder="Description" className='bg-gray-100 px-5 py-2 rounded' />
+                        <textarea type="text" {...register("description")} placeholder="Description" className='bg-gray-100 px-5 py-2 rounded' />
                         <input type="submit" className='bg-[#2196f3] text-white font-semibold rounded py-1' />
                     </form>
                 </div>
