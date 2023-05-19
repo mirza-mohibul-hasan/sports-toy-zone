@@ -55,14 +55,14 @@ const router = createBrowserRouter([
                 element:<PrivateRoute>
                     <ToyDetails></ToyDetails>
                 </PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/toydetails/${params.id}`)
+                loader:({params})=>fetch(`https://b7a11-toy-marketplace-server-side-mirza-mohibul-hasan.vercel.app/toydetails/${params.id}`)
             },
             {
                 path:'/updatetoy/:id',
                 element:<PrivateRoute>
                     <UpdateToy></UpdateToy>
                 </PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/toydetails/${params.id}`)
+                loader:({params})=>fetch(`https://b7a11-toy-marketplace-server-side-mirza-mohibul-hasan.vercel.app/toydetails/${params.id}`)
             },
         ]
     },

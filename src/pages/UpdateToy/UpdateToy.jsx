@@ -13,7 +13,7 @@ const UpdateToy = () => {
     const onSubmit = data => {
         data.price = parseFloat(data.price)
         // console.log(data)
-        fetch(`http://localhost:5000/updatetoy/${_id}`,{
+        fetch(`https://b7a11-toy-marketplace-server-side-mirza-mohibul-hasan.vercel.app/updatetoy/${_id}`,{
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

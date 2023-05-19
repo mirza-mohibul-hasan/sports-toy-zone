@@ -8,7 +8,7 @@ const SubCategory = () => {
     const [activeTab, setActiveTab] = useState("Football");
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/toyscategory/${activeTab}`)
+        fetch(`https://b7a11-toy-marketplace-server-side-mirza-mohibul-hasan.vercel.app/toyscategory/${activeTab}`)
         .then(res => res.json())
         .then(result=> {
             setToys(result)

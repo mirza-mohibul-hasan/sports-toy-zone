@@ -11,7 +11,7 @@ const AddAToy = () => {
         data.price = parseFloat(data.price)
         data.sellerEmail = email;
         data.sellerName = displayName;
-        fetch('http://localhost:5000/addatoys', {
+        fetch('https://b7a11-toy-marketplace-server-side-mirza-mohibul-hasan.vercel.app/addatoys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
