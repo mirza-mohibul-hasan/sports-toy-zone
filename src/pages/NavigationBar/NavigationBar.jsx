@@ -29,7 +29,7 @@ const NavigationBar = () => {
                 {/* <button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log out</button>
                     <Link to='/login'><button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Log in</button></Link> */}
                 {
-                    user && <button className="w-8">
+                    user && <button className="w-8 tooltip tooltip-left tooltip-info" data-tip={user?.displayName}>
                         <img src={user?.photoURL} className='rounded-3xl' alt="" />
                     </button>
                 }
