@@ -9,7 +9,7 @@ const NavigationBar = () => {
         logOut();
     }
     return (
-        <nav className='mt-4 mx-3 w-11/12 md:mx-auto mb-5 md:flex justify-between items-center text-center '>
+        <nav className='mt-4 w-11/12 mx-auto mb-5 md:flex justify-between items-center text-center '>
 
             <div>
                 <h1 className='text-3xl font-bold'>Sports Toys</h1>

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import ToyCard from "./ToyCard";
 
 const SubCategory = () => {
     const [toys, setToys] = useState([]);
@@ -29,9 +30,9 @@ const SubCategory = () => {
         setActiveTab(tabName);
     };
     return (
-        <div>
+        <div className="mt-4 w-11/12 mx-auto mb-5">
             <ToastContainer></ToastContainer>
-            <h1>Sub Category is here</h1>
+            <h1 className="text-2xl font-bold text-center my-3">Toys by category</h1>
             <div className="flex justify-center gap-2">
 
                 <button onClick={()=>handleTabClick('Football')} 
@@ -48,13 +49,7 @@ const SubCategory = () => {
             </div>
             <div>
                 {
-                    toys.map(toy=><div key={toy._id}>
-                        <img className="w-44" src={toy.toyImg} alt="" />
-                        <h1>{toy.toyName}</h1>
-                        <p>${toy.price}</p>
-                        <p>{toy.rating}</p>
-                        <button>Details</button>
-                    </div>)
+                    toys.map(toy=><ToyCard key={toy._id} toy={toy}></ToyCard>)
                 }
             </div>
         </div>
