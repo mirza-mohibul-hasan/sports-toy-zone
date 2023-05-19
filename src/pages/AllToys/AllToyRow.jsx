@@ -1,11 +1,32 @@
 // import React from 'react';
 
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
+
 const AllToyRow = ({ toy, index}) => {
-    const { category,
+    const {user} = useContext(AuthContext)
+    const {_id,
+         category,
         price,
         quantity,
         sellerName,
         toyName } = toy || {};
+        const detailsBtnToast = () =>{
+            if(!user){
+                toast.success('Login To View Details', {
+                    position: "top-center",
+                    autoClose: 1000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
+            }
+        }
     return (
         <>
             <tr>
@@ -27,7 +48,9 @@ const AllToyRow = ({ toy, index}) => {
                     {quantity}
                 </td>
                 <td className="text-sm">
-                    <button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>View Details</button>
+                <Link to={`/toy/${_id}`} >
+                        <button onClick={detailsBtnToast} className="bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white">View Details</button>
+                    </Link>
                 </td>
             </tr>
         </>
