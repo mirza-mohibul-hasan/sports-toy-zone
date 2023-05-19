@@ -19,7 +19,11 @@ const MyToys = () => {
     };
     return (
         <div className="w-11/12 mx-auto">
-            
+            <div className="md:flex justify-center gap-2 my-5 items-center">
+                <span className="text-lg font-semibold">Sort By: </span>
+                <button onClick={()=>handleTabClick(1)} className={`${activeTab==1?"bg-[#2196f3] text-white":"text-[#2196f3] border border-[#2196f3]"} py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0`}>Price Low to High</button>
+                <button onClick={()=>handleTabClick(-1)} className={`${activeTab==-1?"bg-[#2196f3] text-white":"text-[#2196f3] border border-[#2196f3]"} py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0`}>Price High to low</button>
+            </div>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full text-center">
                     <thead >
