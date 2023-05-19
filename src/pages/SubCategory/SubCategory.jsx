@@ -1,7 +1,6 @@
 // import React from 'react';
 
 import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
 import ToyCard from "./ToyCard";
 
 const SubCategory = () => {
@@ -13,16 +12,6 @@ const SubCategory = () => {
         .then(res => res.json())
         .then(result=> {
             setToys(result)
-            toast.success('Data read successfull', {
-                position: "top-left",
-                autoClose: 1000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined,
-                theme: "light",
-            });
         })
     },[activeTab])
 
@@ -31,7 +20,6 @@ const SubCategory = () => {
     };
     return (
         <div className="mt-4 w-11/12 mx-auto mb-5">
-            <ToastContainer></ToastContainer>
             <h1 className="text-2xl font-bold text-center my-3">Toys by category</h1>
             <div className="flex justify-center gap-2">
 

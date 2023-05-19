@@ -14,7 +14,7 @@ const ToyCard = ({ toy }) => {
                 <p>{price}</p>
                 <p>{rating}</p>
                 <div className="card-actions justify-end">
-                    <Link to={`/toydetails/${_id}`}>
+                    <Link to={`/toy/${_id}`}>
                         <button className="bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white">View Details</button>
                     </Link>
                 </div>

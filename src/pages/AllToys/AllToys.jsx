@@ -1,13 +1,10 @@
 import { useEffect, useState } from "react";
 import AllToyRow from "./AllToyRow";
-import { ToastContainer, toast } from "react-toastify";
 
 const AllToys = () => {
     const [alltoys, setAlltoys] = useState([])
     const [loadedtoys, setLoadedToys] = useState([])
-
     const [showmore, setShowMore] = useState(false);
-
     const url = `http://localhost:5000/alltoys?showmore=${showmore}`
     useEffect(() => {
         fetch(url)
@@ -15,16 +12,6 @@ const AllToys = () => {
             .then(data => {
                 setLoadedToys(data)
                 setAlltoys(data)
-                toast.success('Data read successfull', {
-                    position: "top-left",
-                    autoClose: 1000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
             })
     }, [url, showmore])
     const handleShowMore = (show) => {
@@ -38,7 +25,6 @@ const AllToys = () => {
     }
     return (
         <div className="w-11/12 mx-auto">
-            <ToastContainer />
             <form onSubmit={handleSearch} className="flex justify-center my-5">
                 <input type="text" name="search" placeholder="Search" className='border-1 border-[#2196f3] bg-gray-100 px-5 py-2 rounded' />
                 <input className="bg-[#2196f3] text-white py-2 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0" type="submit" value="Search" />
