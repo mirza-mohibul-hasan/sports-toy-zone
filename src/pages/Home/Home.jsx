@@ -3,6 +3,7 @@
 import Gallery from "../Gallery/Gallery";
 import SubCategory from "../SubCategory/SubCategory";
 import Banner from "./Banner";
+import Latest from "./Latest/Latest";
 
 const Home = () => {
     return (
@@ -10,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <Gallery></Gallery>
             <SubCategory></SubCategory>
-            <h1 className="text-center text-8xl">Extra 1</h1>
+            <Latest></Latest>
             <h1 className="text-center text-8xl">Extra 2</h1>
         </div>
     );
