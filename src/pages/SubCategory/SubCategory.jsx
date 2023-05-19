@@ -47,7 +47,7 @@ const SubCategory = () => {
                 className={`${activeTab=="Boxing"?"bg-[#2196f3] text-white":"text-[#2196f3] border border-[#2196f3]"} py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0`}
                 >Boxing</button>
             </div>
-            <div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
                 {
                     toys.map(toy=><ToyCard key={toy._id} toy={toy}></ToyCard>)
                 }
