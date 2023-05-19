@@ -6,8 +6,7 @@ import ToyRow from "./ToyRow";
 import { ToastContainer, toast } from "react-toastify";
 
 const MyToys = () => {
-    const { user, loading } = useContext(AuthContext)
-    console.log(loading)
+    const { user} = useContext(AuthContext)
     const [mytoys, setMytoys] = useState([])
     const [sort, setSort] = useState(0);
     const url = `http://localhost:5000/mytoys?email=${user?.email}&sort=${sort}`

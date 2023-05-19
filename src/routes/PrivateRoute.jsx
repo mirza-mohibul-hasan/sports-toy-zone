@@ -1,14 +1,14 @@
 import { useContext} from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
-import { RiseLoader } from "react-spinners";
+import { RingLoader } from "react-spinners";
 
-const ProvateRoute = ({children}) => {
+const PrivateRoute = ({children}) => {
     const {user, loading} = useContext(AuthContext)
     const location = useLocation();
 
     if(loading){
-        return <RiseLoader color="rgb(217 119 6)" className='text-center my-24'/>
+        return <div className="flex justify-center"><RingLoader  color="#36d7b7"  className='text-center my-24'/></div>
     }
     
     // Private route and Navigate
@@ -18,4 +18,4 @@ const ProvateRoute = ({children}) => {
     return <Navigate state={{from: location}} to='/login' replace></Navigate>;
 };
 
-export default ProvateRoute;
+export default PrivateRoute;
