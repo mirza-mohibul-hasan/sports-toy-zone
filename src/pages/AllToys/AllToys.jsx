@@ -44,7 +44,7 @@ const AllToys = () => {
                             <th>Action</th>
                         </tr>
                     </thead>
-                    <tbody className="w-full">
+                    <tbody className="w-full border-b">
                         {
                             alltoys.map((toy, index) => <AllToyRow key={toy._id} toy={toy} index={index + 1}></AllToyRow>)
                         }

@@ -11,8 +11,6 @@ const AddAToy = () => {
         data.price = parseFloat(data.price)
         data.sellerEmail = email;
         data.sellerName = displayName;
-        console.log(data)
-        // reset();
         fetch('http://localhost:5000/addatoys', {
             method: 'POST',
             headers: {

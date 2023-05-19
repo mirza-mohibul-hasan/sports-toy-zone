@@ -30,7 +30,6 @@ const Register = () => {
                 console.log(result)
                 event.target.reset();
                 updateUserData(result.user, name, photo)
-                // logOut(false)
                 logOut()
                 navigate('/login')
             })
