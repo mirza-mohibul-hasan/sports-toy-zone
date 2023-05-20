@@ -1,10 +1,9 @@
-// import React from 'react';
 import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../provider/AuthProvider";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { AiFillStar } from "react-icons/ai";
 const ToyCard = ({ toy }) => {
     const { _id, toyName, price, rating, toyImg, description } = toy || {};
@@ -28,7 +27,6 @@ const ToyCard = ({ toy }) => {
     },[])
     return (
         <div className="card card-side border-2 border-[#2195f313] bg-[#2195f314] shadow-xl flex-col md:flex-row" data-aos="flip-down">
-            <ToastContainer />
             <div className="p-1 rounded-xl md:w-1/2 flex justify-center items-center">
                 <img className="h-64 w-full md:w-72 rounded-xl" src={toyImg} alt="Toy Iamge" />
             </div>

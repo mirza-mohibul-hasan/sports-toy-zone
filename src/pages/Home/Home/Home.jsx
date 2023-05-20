@@ -1,5 +1,3 @@
-// import React from 'react';
-
 import Gallery from "../Gallery/Gallery";
 import SubCategory from "../SubCategory/SubCategory";
 import Banner from "../Banner.jsx/Banner";

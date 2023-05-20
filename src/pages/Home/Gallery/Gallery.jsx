@@ -1,4 +1,3 @@
-// import React from 'react';
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Aos from "aos";
 import 'aos/dist/aos.css';

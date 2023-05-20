@@ -55,7 +55,7 @@ const Login = () => {
         <div className='flex justify-center items-center md:my-20' style={{}}>
             <div className='p-5 m-5 md:w-3/12 rounded-2xl space-y-8 bg-[#2195f337]' style={{ border: '2px solid #2195f331' }}>
                 {
-                    (errormsg.length > 2) && <p style={{ border: '1px solid red' }} className='text-center text-red-500 text-sm my-1 font-semibold rounded-md'>{errormsg}</p>
+                    (errormsg.length > 2) && <p className='text-center border border-amber-500 text-amber-500 text-sm my-1 font-semibold rounded-md'>{errormsg}</p>
                 }
                 <h2 className='text-2xl font-bold text-center text-gray-700 mb-3 mt-2'>Login Here</h2>
                 <div className='flex justify-around mt-2'>

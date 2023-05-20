@@ -1,4 +1,3 @@
-// import React from 'react';
 import { BsFacebook, BsInstagram } from 'react-icons/bs';
 import logo from '../../assets/locomotive.png'
 
@@ -7,7 +6,7 @@ import { AiFillSkype, AiFillTwitterCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
-        <footer className="w-11/12 mx-auto mb-2 rounded footer p-10 bg-[#2196f3] text-neutral-content">
+        <footer className="w-11/12 mx-auto mb-2 rounded p-10 bg-[#2196f3] text-neutral-content">
             <section className="grid grid-cols-1 sm:grid-cols-4 mx-auto gap-8 py-8">
                 <div>
                     <div className='flex items-center gap-5'>
@@ -49,6 +48,7 @@ const Footer = () => {
 
                 </div>
             </section>
+            <p className='text-center'>ALL RIGHTS RESERVED BY <br /> Mirza Mohibul Hasan</p>
         </footer>
     );
 };

@@ -1,4 +1,3 @@
-// import React from 'react';
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
@@ -39,7 +38,7 @@ const NavigationBar = () => {
                     </div>
                     <div className="md:flex justify-center gap-4 items-center hidden ">
                         <img src={logo} className='h-12' alt="LOgo" />
-                        <h1 className='text-2xl font-bold text-gray-700 font-serif'>SPORTS TOY ZONE</h1>
+                        <h1 className='text-2xl font-bold text-gray-600 font-serif'>SPORTS TOY ZONE</h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

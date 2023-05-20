@@ -1,4 +1,3 @@
-// import React from 'react';
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import MarqueCard from "./MarqueCard";
