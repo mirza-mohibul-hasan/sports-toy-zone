@@ -6,7 +6,7 @@ import Footer from "../pages/Footer/Footer";
 import { ToastContainer } from "react-toastify";
 const Main = () => {
     return (
-        <div>
+        <div className="bg-[#f6f0f0] md:-mt-5">
             <ToastContainer />
             <NavigationBar></NavigationBar>
 

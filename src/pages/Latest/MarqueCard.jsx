@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { toast } from "react-toastify";
-import { AuthContext } from "../../../provider/AuthProvider";
+import { AuthContext } from "../../provider/AuthProvider";
 import { Link } from "react-router-dom";
 
 const MarqueCard = ({ toy }) => {
@@ -21,9 +21,9 @@ const MarqueCard = ({ toy }) => {
         }
     }
     return (
-        <div className="card w-96 bg-base-100 shadow-xl mx-3 border-2">
-            <figure className="max-h-72">
-                <img className="w-full" src={toy.toyImg} alt="Toy" />
+        <div className="card w-80 bg-base-100 shadow-xl mx-3 border-2">
+            <figure className="max-h-64 px-10 pt-10 rounded">
+                <img className="w-full rounded " src={toy.toyImg} alt="Toy" />
             </figure>
             <div className="card-body">
                 <h2 className="card-title text-2xl">

@@ -23,7 +23,7 @@ const ToyCard = ({ toy }) => {
         }
     }
     return (
-        <div className="card card-side border-2 border-[#2195f33a] bg-[#2195f30e] shadow-xl flex-col md:flex-row">
+        <div className="card card-side border-2 border-[#2195f313] bg-[#2195f305] shadow-xl flex-col md:flex-row">
             <ToastContainer />
             <div className="p-1 rounded-xl md:w-1/2">
                 <img className="h-64 w-full md:w-72 rounded-xl" src={toyImg} alt="Toy Iamge" />
@@ -31,10 +31,10 @@ const ToyCard = ({ toy }) => {
             <div className="card-body md:w-1/2">
                 <h2 className="card-title text-3xl">{toyName}</h2>
                 <div className="flex">
-                    <p className="text-lg">Price: ${price}</p>
-                    <p className="flex items-center text-lg">Ratings: {rating} <AiFillStar></AiFillStar></p>
+                    <p className="text-lg text-[#2196f3] font-semibold">Price: ${price}</p>
+                    <p className="flex items-center text-lg text-[#2196f3] font-semibold">Ratings: {rating} <AiFillStar className="text-amber-500"></AiFillStar></p>
                 </div>
-                <p>{description}</p>
+                <p>{description.length>80?description.slice(0,80)+'......':description}</p>
                 <div className="card-actions justify-end">
                     <Link to={`/toy/${_id}`} >
                         <button onClick={detailsBtnToast} className="bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white">View Details</button>

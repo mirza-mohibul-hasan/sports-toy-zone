@@ -22,12 +22,12 @@ const NavigationBar = () => {
         logOut();
     }
     return (
-        <>
-            <div className="bg-[#2196f3] flex justify-around items-center gap-5 mt-4 w-11/12 mx-auto mb-5 md:hidden rounded-lg py-2">
+        <div className="md:mt-5">
+            <div className="bg-[#2195f3a1] flex justify-around items-center gap-5 w-11/12 mx-auto md:hidden rounded py-2">
                 <img src={logo} className='w-12' alt="LOgo" />
-                <h1 className='text-3xl font-bold text-gray-800'>Sports Toys</h1>
+                <h1 className='text-3xl font-bold text-gray-800'>SPORTS TOY ZONE</h1>
             </div>
-            <div className="navbar bg-base-100 mt-4 w-11/12 mx-auto mb-5">
+            <div className="navbar bg-base-100  w-11/12 mx-auto mb-5 rounded">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,7 +39,7 @@ const NavigationBar = () => {
                     </div>
                     <div className="md:flex justify-center gap-4 items-center hidden ">
                         <img src={logo} className='h-12' alt="LOgo" />
-                        <h1 className='text-3xl font-bold text-gray-700'>Sports Toys</h1>
+                        <h1 className='text-3xl font-bold text-gray-700'>SPORTS TOY ZONE</h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
@@ -60,7 +60,7 @@ const NavigationBar = () => {
                     }
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

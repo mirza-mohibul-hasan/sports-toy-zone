@@ -2,8 +2,9 @@
 
 import Gallery from "../Gallery/Gallery";
 import SubCategory from "../SubCategory/SubCategory";
-import Banner from "./Banner";
-import Latest from "./Latest/Latest";
+import Banner from "../Banner.jsx/Banner";
+import Latest from "../Latest/Latest";
+import ContactUs from "../ContactUs/ContactUs";
 
 const Home = () => {
     return (
@@ -12,7 +13,7 @@ const Home = () => {
             <Gallery></Gallery>
             <SubCategory></SubCategory>
             <Latest></Latest>
-            <h1 className="text-center text-8xl">Extra 2</h1>
+            <ContactUs></ContactUs>
         </div>
     );
 };
