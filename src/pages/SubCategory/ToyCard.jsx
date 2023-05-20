@@ -22,10 +22,11 @@ const ToyCard = ({ toy }) => {
             });
         }
     }
+
     return (
-        <div className="card card-side border-2 border-[#2195f313] bg-[#2195f305] shadow-xl flex-col md:flex-row">
+        <div className="card card-side border-2 border-[#2195f313] bg-[#2195f314] shadow-xl flex-col md:flex-row">
             <ToastContainer />
-            <div className="p-1 rounded-xl md:w-1/2">
+            <div className="p-1 rounded-xl md:w-1/2 flex justify-center items-center">
                 <img className="h-64 w-full md:w-72 rounded-xl" src={toyImg} alt="Toy Iamge" />
             </div>
             <div className="card-body md:w-1/2">
