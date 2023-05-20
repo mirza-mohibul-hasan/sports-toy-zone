@@ -3,11 +3,11 @@ import useTitle from "../../hooks/useTitle";
 const Blogs = () => {
     useTitle('Blogs')
     return (
-        <div className="w-11/12 mx-auto my-5 p-5 bg-[#2167df62] rounded space-y-5">
+        <div className="w-11/12 mx-auto my-5 p-5 bg-[#2167df62] rounded space-y-5 font-mono">
             <div className="bg-[#fff] p-5 space-y-1 rounded">
-                <h1 className="text-xl font-semibold">Question: What is an access token and refresh token? How do they work and where should we store them on the client-side?</h1>
+                <h1 className="text-xl font-semibold"> What is an access token and refresh token? How do they work and where should we store them on the client-side?</h1>
                 <h2 className="text-xl font-semibold text-blue-600">Answer:</h2>
-                <p className="text-base">An access token is a short-lived credential that allows a client application to access protected resources on behalf of a user. A refresh token is a long-lived credential that can be used to obtain new access tokens without requiring the user to re-authenticate.
+                <p className="text-base ">An access token is a short-lived credential that allows a client application to access protected resources on behalf of a user. A refresh token is a long-lived credential that can be used to obtain new access tokens without requiring the user to re-authenticate.
                 </p>
                 <p>
                     Access tokens are typically stored in the browser local storage or session storage. Refresh tokens are typically stored in the browser localStorage or a secure key-value store.
@@ -31,7 +31,7 @@ const Blogs = () => {
                 <h1 className="text-xl font-semibold">Question: What is MongoDB aggregate and how does it work?
                 </h1>
                 <h2 className="text-xl font-semibold text-blue-600">Answer:</h2>
-                <p className="text-base">Sure. MongoDB aggregate is a feature that allows you to perform complex operations on data in a MongoDB collection. It works by using a pipeline of stages, each of which performs a specific operation on the data. The stages in a pipeline are executed in sequence, and the output of each stage is passed to the next stage.</p>
+                <p className="text-base">MongoDB aggregate is a feature that allows you to perform complex operations on data in a MongoDB collection. It works by using a pipeline of stages, each of which performs a specific operation on the data. The stages in a pipeline are executed in sequence, and the output of each stage is passed to the next stage.</p>
                 <p>Some of the most common aggregate operations are:</p>
                 <p className="flex items-center"><FaArrowRight className="text-blue-500" /> <>$match: This stage filters the data in the collection based on a condition.</></p>
                 <p className="flex items-center"><FaArrowRight className="text-blue-500" /> <>$group: This stage groups the data in the collection by a value and calculates a value for each group.</></p>

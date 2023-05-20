@@ -15,7 +15,7 @@ const ToyRow = ({ mytoy, handleDelete }) => {
         _id } = mytoy || {};
     return (
         <>
-            <tr>
+            <tr className="border-2">
                 <td className="flex justify-center">
                     <img className="w-8 h-8  rounded-3xl" src={toyImg} alt="" />
                 </td>

@@ -29,7 +29,7 @@ const AllToyRow = ({ toy, index}) => {
         }
     return (
         <>
-            <tr>
+            <tr className="bg-[#08111998] border-2">
                 <td>{index++}</td>
                 <td className="text-sm">
                     {sellerName}

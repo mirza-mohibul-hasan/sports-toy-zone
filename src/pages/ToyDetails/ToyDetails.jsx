@@ -21,7 +21,7 @@ const ToyDetails = () => {
             <div className="card card-side bg-base-100 shadow-xl flex-col md:flex-row">
                 <img className="flex-1 max-h-72 rounded-xl" src={toyImg} alt="Movie" />
                 <div className="card-body flex-1">
-                    <h2 className="card-title text-3xl font-semibold">Toy Name: {toyName}</h2>
+                    <h2 className="card-title text-3xl font-semibold">Name: {toyName}</h2>
                     <h2 className="text-lg font-semibold">Seller: {sellerName}</h2>
                     <h2 className="text-lg font-semibold">Contsct: {sellerEmail}</h2>
                     <div className="flex gap-5">

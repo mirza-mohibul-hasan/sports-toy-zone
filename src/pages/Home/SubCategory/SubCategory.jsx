@@ -19,8 +19,8 @@ const SubCategory = () => {
         setActiveTab(tabName);
     };
     return (
-        <div className="mt-4 w-11/12 mx-auto mb-5">
-            <h1 className="text-2xl font-bold text-center my-3">Toys by category</h1>
+        <div className="mt-6 w-11/12 mx-auto mb-5">
+            <h1 className="text-3xl font-bold text-center my-3">TOYS CATEGORY</h1>
             <div className="flex justify-center gap-2">
 
                 <button onClick={()=>handleTabClick('Football')} 

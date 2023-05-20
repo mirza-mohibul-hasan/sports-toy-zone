@@ -28,13 +28,13 @@ const AllToys = () => {
     return (
         <div className="w-11/12 mx-auto">
             <form onSubmit={handleSearch} className="flex justify-center my-5">
-                <input type="text" name="search" placeholder="Search" className='border-1 border-[#2196f3] bg-gray-100 px-5 py-2 rounded' />
+                <input type="text" name="search" placeholder="Search" className='border-2 border-[#006fd7] bg-gray-100 px-5 py-2 rounded' />
                 <input className="bg-[#2196f3] text-white py-2 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0" type="submit" value="Search" />
             </form>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full text-center">
                     <thead >
-                        <tr>
+                        <tr className="bg-[#5e9bcc98]">
                             <th>Serial</th>
                             <th>Seller</th>
                             <th>Toy Name</th>

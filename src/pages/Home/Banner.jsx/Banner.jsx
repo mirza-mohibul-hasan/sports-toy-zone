@@ -2,13 +2,13 @@
 
 const Banner = () => {
     return (
-        <div className="mt-4 w-11/12 mx-auto mb-5 rounded-xl hero min-h-screen" style={{ backgroundImage: `url("https://i0.wp.com/kiddiland.in/wp-content/uploads/2022/10/banner-01.jpg?fit=800%2C374&ssl=1")` }}>
-            <div className="hero-overlay bg-opacity-40 rounded-xl"></div>
+        <div className="mt-4 w-11/12 mx-auto mb-5 rounded-xl hero min-h-screen" style={{ backgroundImage: `url("banner.webp")` }}>
+            <div className="hero-overlay bg-opacity-50 rounded-xl"></div>
             <div className="hero-content text-center text-neutral-content">
-                <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                <div className="max-w-md md:max-w-4xl">
+                    <h1 className="mb-5 text-3xl md:text-5xl font-bold">Find Your <span className="text-[#07dcca]">Toys Here</span></h1>
+                    <p className="mb-5">Our toy shop is a magical wonderland filled with endless delights for children of all ages. From cuddly stuffed animals to educational toys, building sets to dolls, action figures to board games, there is something for every childs imagination to explore. Our arts and crafts section sparks creativity, while puzzles challenge young minds. Come and discover the joy of play in our vibrant toy shop.</p>
+                    <button className='bg-[#0e87ea] py-2 px-3 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Contact Us</button>
                 </div>
             </div>
         </div>

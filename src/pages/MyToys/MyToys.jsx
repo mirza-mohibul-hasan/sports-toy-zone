@@ -59,7 +59,7 @@ const MyToys = () => {
     }
     useTitle('My Toys')
     return (
-        <div className="w-11/12 mx-auto">
+        <div className="w-11/12 mx-auto my-5">
             <ToastContainer/>
             <div className="md:flex justify-center gap-2 my-5 items-center">
                 <span className="text-lg font-semibold">Sort By: </span>

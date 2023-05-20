@@ -20,7 +20,8 @@ const Gallery = () => {
     ]
     return (
         <div className="w-11/12 mx-auto">
-            <h1 className="text-3xl font-bold text-center">Toy Gallery</h1>
+            <h1 className="text-4xl font-bold text-center">TOYS GALLERY</h1>
+            <p className="w-11/12 md:w-1/2 my-3 mx-auto text-gray-500 text-center">Step into our enchanting toy shop, where dreams come alive. With a delightful array of toys, from cuddly plush companions to engaging educational games.</p>
             <ResponsiveMasonry
             columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
         >
