@@ -3,7 +3,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css';
 import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../provider/AuthProvider";
+import { AuthContext } from "../../../provider/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import { AiFillStar } from "react-icons/ai";
 const ToyCard = ({ toy }) => {

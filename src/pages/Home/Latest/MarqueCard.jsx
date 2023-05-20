@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AiFillStar } from "react-icons/ai";
 import { toast } from "react-toastify";
-import { AuthContext } from "../../provider/AuthProvider";
+import { AuthContext } from "../../../provider/AuthProvider";
 import { Link } from "react-router-dom";
 
 const MarqueCard = ({ toy }) => {
