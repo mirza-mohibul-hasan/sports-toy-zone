@@ -23,7 +23,7 @@ const MarqueCard = ({ toy }) => {
     return (
         <div className="card w-80 bg-base-100 shadow-xl mx-3 border-2">
             <figure className="h-64 px-10 pt-10 rounded">
-                <img className="w-full rounded " src={toy.toyImg} alt="Toy" />
+                <img className="w-full h-64 rounded " src={toy.toyImg} alt="Toy" />
             </figure>
             <div className="card-body">
                 <h2 className="card-title text-2xl">

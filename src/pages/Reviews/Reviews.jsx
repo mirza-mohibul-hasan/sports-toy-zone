@@ -1,4 +1,4 @@
-import Reviews from "./Reviews";
+import Reviews from "./ReviewCard";
 import Aos from "aos";
 import 'aos/dist/aos.css'; 
 import { useEffect } from "react";
@@ -8,9 +8,8 @@ const ContactUs = () => {
     },[])
     return (
         <section className="my-8 w-11/12 mx-auto">
-            <h1 className="font-semibold text-3xl text-center">About Us</h1>
-            <p className=" text-center sm:w-[50%] mx-auto mt-4 mb-5">For free consultation and premium service ,contact with
-                us</p>
+            <h1 className="font-semibold text-3xl text-center">Customer Reviews</h1>
+            <p className=" text-center sm:w-[50%] mx-auto mt-4 mb-5">Here what our customer said about us Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, suscipit?</p>
             <div className='lg:flex gap-5'>
                 <div className="lg:w-2/3  grid grid-cols-1 lg:grid-cols-3 gap-5" data-aos="fade-up">
                     {/* <h1>Customers Review</h1> */}

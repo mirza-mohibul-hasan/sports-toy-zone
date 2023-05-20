@@ -2,6 +2,7 @@
 
 import { AiFillStar } from "react-icons/ai";
 import { useLoaderData } from "react-router-dom";
+import useTitle from "../../hooks/useTitle";
 
 const ToyDetails = () => {
     const toy = useLoaderData()
@@ -14,6 +15,7 @@ const ToyDetails = () => {
         sellerName,
         toyImg,
         toyName } = toy || {};
+        useTitle('Toy Details')
     return (
         <div className="w-8/12 mx-auto my-10">
             <div className="card card-side bg-base-100 shadow-xl flex-col md:flex-row">

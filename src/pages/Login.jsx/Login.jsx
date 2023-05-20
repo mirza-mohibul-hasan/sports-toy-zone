@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import { FaGoogle } from 'react-icons/fa';
+import useTitle from "../../hooks/useTitle";
 const Login = () => {
     const { handleGoogleSignIn, signIn } = useContext(AuthContext);
     const [errormsg, setErrormsg] = useState('');
@@ -49,6 +50,7 @@ const Login = () => {
                 }
             })
     }
+    useTitle('Login')
     return (
         <div className='flex justify-center items-center md:my-20' style={{}}>
             <div className='p-5 m-5 md:w-3/12 rounded-2xl space-y-8 bg-[#2195f337]' style={{ border: '2px solid #2195f331' }}>

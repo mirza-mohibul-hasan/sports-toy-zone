@@ -4,9 +4,11 @@ import Gallery from "../Gallery/Gallery";
 import SubCategory from "../SubCategory/SubCategory";
 import Banner from "../Banner.jsx/Banner";
 import Latest from "../Latest/Latest";
-import ContactUs from "../ContactUs/ContactUs";
+import ContactUs from "../Reviews/Reviews";
+import useTitle from "../../hooks/useTitle";
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <Banner></Banner>

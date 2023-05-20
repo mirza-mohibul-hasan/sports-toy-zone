@@ -5,6 +5,7 @@ import { AuthContext } from "../../provider/AuthProvider";
 import ToyRow from "./ToyRow";
 import Swal from 'sweetalert2'
 import { ToastContainer, toast } from "react-toastify";
+import useTitle from "../../hooks/useTitle";
 const MyToys = () => {
     const { user} = useContext(AuthContext)
     const [mytoys, setMytoys] = useState([])
@@ -56,6 +57,7 @@ const MyToys = () => {
             }
         })
     }
+    useTitle('My Toys')
     return (
         <div className="w-11/12 mx-auto">
             <ToastContainer/>

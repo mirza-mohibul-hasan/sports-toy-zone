@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { AuthContext } from "../../provider/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useTitle from "../../hooks/useTitle";
 const AddAToy = () => {
     const { user } = useContext(AuthContext)
     const { email, displayName } = user || '';
@@ -35,6 +36,7 @@ const AddAToy = () => {
                 }
             })
     };
+    useTitle('Add Toy')
     return (
         <div className="flex justify-center items-center md:my-10">
             <ToastContainer />

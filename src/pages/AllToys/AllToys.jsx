@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import AllToyRow from "./AllToyRow";
+import useTitle from "../../hooks/useTitle";
 
 const AllToys = () => {
     const [alltoys, setAlltoys] = useState([])
@@ -23,6 +24,7 @@ const AllToys = () => {
         const searchedToy = loadedtoys.filter(toy => toy.toyName.toLowerCase().includes(search.toLowerCase()))
         setAlltoys(searchedToy)
     }
+    useTitle('All Toys')
     return (
         <div className="w-11/12 mx-auto">
             <form onSubmit={handleSearch} className="flex justify-center my-5">

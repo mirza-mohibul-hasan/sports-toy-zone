@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
+import useTitle from "../../hooks/useTitle";
 const UpdateToy = () => {
     const toy = useLoaderData();
     const {register, handleSubmit} = useForm();
@@ -36,6 +37,7 @@ const UpdateToy = () => {
             }
         })
     };
+    useTitle('Update Toy')
     return (
         <div className="flex justify-center items-center md:my-10">
             <ToastContainer />

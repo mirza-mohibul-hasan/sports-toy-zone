@@ -3,6 +3,7 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import useTitle from "../../hooks/useTitle";
 
 const Register = () => {
     const navigate = useNavigate();
@@ -42,6 +43,7 @@ const Register = () => {
                 }
             })
     }
+    useTitle('Register')
     return (
         // Register page
         <div className='flex justify-center items-center md:my-20'>
