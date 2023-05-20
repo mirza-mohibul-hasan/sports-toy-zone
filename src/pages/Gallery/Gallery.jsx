@@ -1,6 +1,12 @@
 // import React from 'react';
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Aos from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const Gallery = () => {
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+    },[])
     const images = [
         "https://static-01.daraz.com.bd/p/64e2b794d097bfb6438cd2e60dd89d34.png",
         "https://static01.nyt.com/images/2020/07/21/autossell/sports-reboot-promo-still/sports-reboot-promo-still-videoLarge.jpg",
@@ -25,7 +31,7 @@ const Gallery = () => {
                         src={image}
                         style={{ width: "100%", display: "block"}}
                         alt=""
-                    />
+                        data-aos="zoom-in-up"/>
                 ))}
             </Masonry>
         </ResponsiveMasonry>

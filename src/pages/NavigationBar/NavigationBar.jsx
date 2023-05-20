@@ -23,9 +23,9 @@ const NavigationBar = () => {
     }
     return (
         <div className="md:mt-5">
-            <div className="bg-[#2195f3a1] flex justify-around items-center gap-5 w-11/12 mx-auto md:hidden rounded py-2">
+            <div className="bg-[#2195f379] flex justify-around items-center gap-5 w-11/12 mx-auto md:hidden rounded py-2">
                 <img src={logo} className='w-12' alt="LOgo" />
-                <h1 className='text-3xl font-bold text-gray-800'>SPORTS TOY ZONE</h1>
+                <h1 className='text-2xl font-bold text-[#1c1717] font-serif'>SPORTS TOY ZONE</h1>
             </div>
             <div className="navbar bg-base-100  w-11/12 mx-auto mb-5 rounded">
                 <div className="navbar-start">
@@ -39,7 +39,7 @@ const NavigationBar = () => {
                     </div>
                     <div className="md:flex justify-center gap-4 items-center hidden ">
                         <img src={logo} className='h-12' alt="LOgo" />
-                        <h1 className='text-3xl font-bold text-gray-700'>SPORTS TOY ZONE</h1>
+                        <h1 className='text-2xl font-bold text-gray-700 font-serif'>SPORTS TOY ZONE</h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
