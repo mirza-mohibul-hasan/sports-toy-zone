@@ -18,8 +18,8 @@ const Reviews = () => {
                 </div>
             </div>
             <div className='border-2 p-10 text-center max-h-72 rounded space-y-2'>
-                <img className='w-20 mx-auto rounded-[50%]' src="https://image.cnbcfm.com/api/v1/image/106878527-1620223837055-106748412-1602881184740-biden.jpg?v=1620224062" alt="" />
-                <h2 className='text-2xl font-semibold border-b-2'>Joe Biden</h2>
+                <img className='w-20 mx-auto rounded-[50%]' src="https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="" />
+                <h2 className='text-2xl font-semibold border-b-2'>Elon Mask</h2>
                 <p className='text-md text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, at?</p>
                 <div className='flex items-center justify-around'>
                     <p className='flex text-amber-500'>
@@ -33,8 +33,8 @@ const Reviews = () => {
                 </div>
             </div>
             <div className='border-2 p-10 text-center max-h-72 rounded space-y-2'>
-                <img className='w-20 mx-auto rounded-[50%]' src="https://image.cnbcfm.com/api/v1/image/106878527-1620223837055-106748412-1602881184740-biden.jpg?v=1620224062" alt="" />
-                <h2 className='text-2xl font-semibold border-b-2'>Joe Biden</h2>
+                <img className='w-20 mx-auto rounded-[50%]' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTieXOrpFa3DCPe79_PlPc9G4xVw2TxMWdg&usqp=CAU" alt="" />
+                <h2 className='text-2xl font-semibold border-b-2'>Bill Gates</h2>
                 <p className='text-md text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, at?</p>
                 <div className='flex items-center justify-around'>
                     <p className='flex text-amber-500'>

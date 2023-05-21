@@ -15,12 +15,12 @@ const ToyDetails = () => {
         toyName } = toy || {};
     useTitle('Toy Details')
     return (
-        <div className="w-8/12 mx-auto my-10">
-            <div className="card card-side bg-base-100 shadow-xl flex-col md:flex-row items-center">
-                <img className="flex-1 max-h-72 rounded-xl m-3" src={toyImg} alt="Movie" />
-                <div className="card-body flex-1">
+        <div className="w-6/12 mx-auto my-10 ">
+            <div className="card card-side bg-[#2195f314] shadow-xl flex-col  items-center ">
+                <img className="flex-1 max-h-96 rounded-xl mx-3 mt-5" src={toyImg} alt="Movie" />
+                <div className="card-body flex-1 mr-20 ml-20 mb-5">
                     <h2 className="card-title text-3xl font-semibold"><span className="text-gray-500">Name:</span> {toyName}</h2>
-                    <h2 className="text-lg font-semibold"><span className="text-gray-500">Seller:</span>{sellerName}</h2>
+                    <h2 className="text-lg font-semibold"><span className="text-gray-500">Seller: </span>{sellerName}</h2>
                     <h2 className="text-lg font-semibold"><span className="text-gray-500">Contact:</span> {sellerEmail}</h2>
                     <div className="flex gap-2">
                         <p className="text-lg font-semibold">Price: ${price}</p>

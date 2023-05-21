@@ -44,18 +44,27 @@ const AddAToy = () => {
                 <h2 className='text-2xl font-bold text-center text-gray-700 mt-5'>Add new toys</h2>
                 <div className="card-body">
                     <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-3'>
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Photo URL</label>
                         <input type="text" {...register("toyImg")} placeholder="Photo URL" className='bg-gray-100 px-5 py-2 rounded' />
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Toy Name</label>
                         <input type="text" {...register("toyName")} placeholder="Toy Name" className='bg-gray-100 px-5 py-2 rounded' />
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Seller Name</label>
                         <input type="text" defaultValue={displayName} {...register("sellerName")} placeholder="Seller Name" className='bg-gray-100 px-5 py-2 rounded' />
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Seller Email</label>
                         <input type="email" defaultValue={email} {...register("sellerEmail")} placeholder="Seller Email" className='bg-gray-100 px-5 py-2 rounded' />
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Catetory</label>
                         <select className="text-input bg-gray-100 px-5 py-2 rounded" {...register("category")}>
                             <option value="Football">Football Toy</option>
                             <option value="Cricket">Cricket Toy</option>
                             <option value="Boxing">Boxing Toy</option>
                         </select>
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Price</label>
                         <input type="text" {...register("price")} placeholder="Price" className='bg-gray-100 px-5 py-2 rounded' />
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Ratings</label>
                         <input type="text" {...register("rating")} placeholder="Ratings" className='bg-gray-100 px-5 py-2 rounded' />
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Available Quantity</label>
                         <input type="text" {...register("quantity")} placeholder="Available Quantity" className='bg-gray-100 px-5 py-2 rounded' />
+                        <label htmlFor="" className="text-md font-semibold text-gray-600 px-1 -mb-3">Description</label>
                         <textarea type="text" {...register("description")} placeholder="Description" className='bg-gray-100 px-5 py-2 rounded' />
                         <input type="submit" className='bg-[#2196f3] text-white font-semibold rounded py-1 hover:bg-gray-500 hover:text-white' />
                     </form>

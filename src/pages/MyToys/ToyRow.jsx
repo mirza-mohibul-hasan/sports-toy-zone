@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
+import 'react-tooltip/dist/react-tooltip.css'
 const ToyRow = ({ mytoy, handleDelete }) => {
     const { category,
         description,
@@ -37,7 +39,14 @@ const ToyRow = ({ mytoy, handleDelete }) => {
                 <td className="text-sm">
                     {quantity}
                 </td>
-                <td className="text-sm">
+                <td className="text-sm" data-tooltip-id="my-tooltip"
+                    data-tooltip-content={description}
+                    data-tooltip-place="left">
+                    <Tooltip id="my-tooltip" style={{
+                        color: 'black',
+                        fontWeight: '600',
+                        backgroundColor: '#2196f3',
+                    }} />
                     {
                         `${description.length > 30 ? description.slice(0, 30) + '....' : description}`
                     }
@@ -45,7 +54,7 @@ const ToyRow = ({ mytoy, handleDelete }) => {
                 <td className="text-sm">
                     <Link to={`/updatetoy/${_id}`}>
                         <button className='bg-[#2196f3] py-1 px-2 mx-1 rounded hover:bg-gray-500 font-semibold md:my-0 text-white'>Update</button></Link>
-                    <button onClick={()=>handleDelete(_id)} className='bg-[#f32121] py-1 px-2 mx-1 rounded hover:bg-[#f0d7d7] hover:text-[#ff0000] font-semibold md:my-0 text-white'>Delete</button>
+                    <button onClick={() => handleDelete(_id)} className='bg-[#f32121] py-1 px-2 mx-1 rounded hover:bg-[#f0d7d7] hover:text-[#ff0000] font-semibold md:my-0 text-white'>Delete</button>
                 </td>
             </tr>
         </>
